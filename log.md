@@ -28,3 +28,14 @@
 **Link(s) to work**
 1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
 2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+
+
+### Day 5: September 29, Tuesday
+
+**Today's Progress**: I have gone through the pointer lesson and hackerearth lesson of solving efficient program
+
+**Thoughts** I have to code and practice more and have to submit the open source project on the github.
+
+**Link(s) to work**
+1. [Hacker rank basic number](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/tutorial/)
+2. [Pointer from abdul bari](https://www.youtube.com/watch?v=OqLt2GfX6jg&list=PLDN4rrl48XKp1ubbVUHVrOMkO4rTsjXrg)
