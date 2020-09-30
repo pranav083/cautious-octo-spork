@@ -38,3 +38,25 @@
 **Link(s) to work**
 1. [Hacker rank basic number](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/tutorial/)
 2. [Pointer from abdul bari](https://www.youtube.com/watch?v=OqLt2GfX6jg&list=PLDN4rrl48XKp1ubbVUHVrOMkO4rTsjXrg)
+
+
+
+### Day 6: September 30, Wednesday
+
+**Today's Progress**: I have studied the class inheritace in python and testing is left. Studied about stack and pointer.
+
+**Thoughts** : I am still sometime confused and thinking of going into the vision field as it have a good scope in research.
+
+**Link(s) to work**:
+1.[A good algo animation site](https://www.cs.usfca.edu/~galles/visualization/Search.html)
+
+# Dummy #
+### Day 5: September 29, Tuesday
+
+**Today's Progress**:
+
+**Thoughts** :
+
+**Link(s) to work**:
+1.
+2.
