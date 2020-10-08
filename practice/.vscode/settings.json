@@ -1,0 +1,11 @@
+{
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.showExecutionMessage": true,
+    "code-runner.clearPreviousOutput": false,
+    "files.associations": {
+        "iostream": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "type_traits": "cpp"
+    }
+}

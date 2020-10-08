@@ -1,0 +1,4 @@
+enter the area parameter
+area of the rectangle is 30
+area of the triangle  is 15
+sum of the natural no.is 15
