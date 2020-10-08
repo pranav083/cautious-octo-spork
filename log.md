@@ -50,8 +50,37 @@
 **Link(s) to work**:
 1.[A good algo animation site](https://www.cs.usfca.edu/~galles/visualization/Search.html)
 
+### Day 5: October 4, Sunday
+
+**Today's Progress**: I had brought one course by abdul bari on the basic fundamental of cpp to advance
+
+**Thoughts** : the course is quite big and it will take around a month and half to complete it. 
+
+**Link(s) to work**:
+1.[udemy course](https://www.udemy.com/course/cpp-deep-dive/learn/lecture/13820460#announcements)
+
+### Day 11: October 6, Tuesday
+
+**Today's Progress**: Today i got my agenda for this month 
+
+**Thoughts** : It will take a lot of time to complete.
+
+**Link(s) to work**:
+1.
+2.
+
+### Day 14: October 8, Thrusday
+
+**Today's Progress**: today i had practice writting function and some basic programs
+
+**Thoughts** : i am getting slow sometimes
+
+**Link(s) to work**:
+1.
+2.
+
 # Dummy #
-### Day 5: September 29, Tuesday
+### Day 5: October 6, Tuesday
 
 **Today's Progress**:
 
