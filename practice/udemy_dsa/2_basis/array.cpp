@@ -8,5 +8,6 @@ int main()
     for (int x : a)
     {
         cout<<x<<endl;
+        
     }
 }
