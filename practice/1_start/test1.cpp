@@ -8,6 +8,8 @@ using namespace std;
 
 int main() 
 { OJ
-	 // Write your code here 
+	int a, b;
+	cin>>a>>b;
+	cout<<a+b;
 	return 0; 
 } 
