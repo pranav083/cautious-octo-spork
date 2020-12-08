@@ -2,9 +2,9 @@
 using namespace std; 
 
 #define OJ \
-    (void)!freopen("../../../input.txt", "r", stdin); \
-    (void)!freopen("../../../error.txt", "w", stderr); \
-    (void)!freopen("../../../output.txt", "w", stdout);
+    (void)!freopen("../../input.txt", "r", stdin); \
+    (void)!freopen("../../error.txt", "w", stderr); \
+    (void)!freopen("../../output.txt", "w", stdout);
 
 int main() 
 { OJ
