@@ -12,10 +12,25 @@ int arrays(int a[], int &num) {
 		cout << a[i] << endl;
 	}
 	cout << "num in function: " << num << endl;
-
 }
+
+struct Rectangle
+{
+	int length;
+	int breath;
+};
+
+void fun(struct Rectangle *p)
+{
+	cin >> p -> length;
+	cin >> p -> breath;
+	cout << "length " << p -> length << " , breath " << p -> breath << endl;
+}
+
 int main()
 {	OJ
+	struct Rectangle t;
+	fun(&t);
 	int n;
 	cout << "passing array through pointer" << endl;
 	cin >> n;
