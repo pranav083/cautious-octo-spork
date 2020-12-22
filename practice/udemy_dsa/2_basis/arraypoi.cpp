@@ -29,6 +29,7 @@ void fun(struct Rectangle *p)
 
 int main()
 {	OJ
+
 	struct Rectangle t;
 	fun(&t);
 	int n;

@@ -38,7 +38,5 @@ int main()
 	cin >> l;
 	change_length(&r, l);
 	cout << area(r) << endl;
-
-
 	return 0;
 }
