@@ -30,7 +30,7 @@ void fun(const int &b)
 		fun(a - 1);
 	}
 }
-
+// but same not apply in the single function calling
 void swap(int &b, int &a)
 {
 	int temp;
