@@ -18,6 +18,9 @@ using namespace std;
 // 	}
 // }
 
+// one to notice is that if you want to call a fuction by refernce then it is important to
+// call it by referce with "const int &x" structure not by "int &x" due to the occurance of multiple referece
+// on the same variable.
 void fun(const int &b)
 {
 	int a = b;
