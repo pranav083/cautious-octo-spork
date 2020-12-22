@@ -9,14 +9,14 @@ using namespace std;
 
 
 
-// void fun_rev(int &a)
-// {
-// 	if (a < 6)
-// 	{
-// 		cout << "hello : " << a << endl;
-// 		return fun(a + 1);
-// 	}
-// }
+void fun_rev(const int &a)
+{
+	if (a < 6)
+	{
+		cout << "hello : " << a << endl;
+		fun_rev(a + 1);
+	}
+}
 
 // one to notice is that if you want to call a fuction by refernce then it is important to
 // call it by referce with "const int &x" structure not by "int &x" due to the occurance of multiple referece
@@ -48,7 +48,7 @@ int main()
 	// b = &c;
 	fun(b);
 	cout << b - 7 << endl;
-	// fun_rev(b);
+	fun_rev(b);
 	swap(b, c);
 	cout << b << " " << c << endl;
 }
