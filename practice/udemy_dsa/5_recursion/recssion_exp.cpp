@@ -29,6 +29,5 @@ int main()
 {	OJ
 	int a, b, c;
 	cin >> a >> b;
-	c = expo(a, b);
-	cout << c << endl;
+	cout << expo(a, b) << endl;
 }
