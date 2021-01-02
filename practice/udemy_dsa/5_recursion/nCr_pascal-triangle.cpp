@@ -1,3 +1,4 @@
+// nCr using the pascal triangle method with the time complexity of O(n)
 #include<iostream>
 
 using namespace std;
