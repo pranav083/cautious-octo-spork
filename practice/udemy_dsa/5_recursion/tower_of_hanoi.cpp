@@ -19,10 +19,10 @@ void TOH(int n, int A, int B, int C)
     (void)!freopen("../../../error.txt", "w", stderr); \
     (void)!freopen("../../../output.txt", "w", stdout);
 #endif
+
 int main()
 {	OJ
 	int level;
 	cin >> level;
 	TOH(level, 1, 2, 3);
 }
-
