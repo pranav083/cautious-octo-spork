@@ -2,25 +2,27 @@
 #include <iostream>
 
 using namespace std;
-
-int f(int n)
+void count(int n)
 
 {
 
-	static int i = 1;
+	static int d = 1;
 
-	if (n >= 5)return n;
+	printf("%d", n);
 
-	n = n + i;
+	printf("%d", d);
 
-	i++;
+	d++;
 
-	return f(n);
+	if (n > 1)
+		count(n - 1);
 
+	printf("  %d", d);
 }
 
 int main()
+
 {
-	int a = 1;
-	f(1);
+
+	count(3);
 }
