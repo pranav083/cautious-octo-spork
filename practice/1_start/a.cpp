@@ -15,5 +15,7 @@ int main()
     cin >> i;
     cout << "hello   world ";
     cout << i * i * i;
+    
     return 0;
+
 }
