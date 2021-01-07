@@ -2,17 +2,10 @@
     "tasks": [
         {
             "label": "save all file",
-            "isBackground": false,  
-			"presentation": {
-				"reveal": "never"
-			},                    
-            "options": {
-                
-                "cwd": "workbench.action.files.saveAll"
-            }  ,
+            "type": "process",                  
             // "type": "shell",
             // "key": "ctrl+h",            // binding of your choice
-            "command": "workbench.action.files.saveAll",         
+            "command": "${command:workbench.action.files.saveAll}",
 
         },        
         {   
