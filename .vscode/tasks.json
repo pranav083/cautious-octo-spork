@@ -2,13 +2,22 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "C/C++: g++ build active file",
-            "command": "/usr/bin/g++",
+            "label": "Build and run(g++-7)",
+            "command": "",
             "args": [
-                "-g",
-                "${file}",
+                "cd",
+                "${fileDirname}",
+                "&&",
+                "g++-7",
+                "-std=c++14",
+                "${fileBasename}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileBasenameNoExtension}",
+                "&&",
+                "./${fileBasenameNoExtension}",
+                "&&",
+                "rm",
+                "${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -16,29 +25,56 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": "build"
+            "presentation": {
+                "reveal": "never",
+                // "showReuseMessage": false,
+                "clear": true,
+              }
         },
         {
+            "label": "add + commit",
             "type": "shell",
-            "label": "C/C++: g++-7 build active file",
-            "command": "/usr/bin/g++-7",
+            "command": "",
             "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                // "cpp" :  "cd $dir && g++ -std=c++14 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $fileNameWithoutExt  && git add $fileName && git commit -s -m \"file code updated : $fileName\""
+                "git",
+                "add", 
+                "${fileBasename}", 
+                "&&", 
+                "git",
+                "commit",
+                "-s",
+                "-m",
+                "file code updated : ${fileBasename}",
             ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "problemMatcher": [
-                "$gcc"
+            "dependsOn" :[
+                "Build and run(g++-7)",
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
+            "problemMatcher":[],
+            "presentation": {
+                "focus": true
+            }            
+        },  
+        {
+            "label": "Commit Code",
+            "type": "shell",
+            "command": "",
+            "args": [
+                // "cpp" :  "cd $dir && g++ -std=c++14 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $fileNameWithoutExt  && git add $fileName && git commit -s -m \"file code updated : $fileName\"" 
+                "git",
+                "commit",
+                "-s",
+                "-m",
+                "file code updated : ${fileBasename}",
+            ],
+            "dependsOn" :[
+                "Build and run(g++-7)",
+            ],
+            "problemMatcher":[],
+            "presentation": {
+                "focus": true
             }
-        }
+        }                
     ],
     "version": "2.0.0"
 }
