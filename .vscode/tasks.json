@@ -32,11 +32,24 @@
               }
         },
         {
-            "label": "add + commit",
+            "label": "build + commit",
             "type": "shell",
             "command": "",
             "args": [
-                // "cpp" :  "cd $dir && g++ -std=c++14 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $fileNameWithoutExt  && git add $fileName && git commit -s -m \"file code updated : $fileName\""
+                "cd",
+                "${fileDirname}",
+                "&&",
+                "g++-7",
+                "-std=c++14",
+                "${fileBasename}",
+                "-o",
+                "${fileBasenameNoExtension}",
+                "&&",
+                "./${fileBasenameNoExtension}",
+                "&&",
+                "rm",
+                "${fileBasenameNoExtension}",
+                "&&",
                 "git",
                 "add", 
                 "${fileBasename}", 
@@ -45,36 +58,16 @@
                 "commit",
                 "-s",
                 "-m",
-                "file code updated : ${fileBasename}",
+                "\"file code updated : ${fileBasename}\"",
+                "",
             ],
-            "dependsOn" :[
-                "Build and run(g++-7)",
-            ],
+
             "problemMatcher":[],
             "presentation": {
-                "focus": true
-            }            
-        },  
-        {
-            "label": "Commit Code",
-            "type": "shell",
-            "command": "",
-            "args": [
-                // "cpp" :  "cd $dir && g++ -std=c++14 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $fileNameWithoutExt  && git add $fileName && git commit -s -m \"file code updated : $fileName\"" 
-                "git",
-                "commit",
-                "-s",
-                "-m",
-                "file code updated : ${fileBasename}",
-            ],
-            "dependsOn" :[
-                "Build and run(g++-7)",
-            ],
-            "problemMatcher":[],
-            "presentation": {
-                "focus": true
-            }
-        }                
+                "focus": true,
+                "reveal": "never",
+            },          
+        },                 
     ],
     "version": "2.0.0"
 }
