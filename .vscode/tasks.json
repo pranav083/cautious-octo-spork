@@ -1,8 +1,23 @@
 {
     "tasks": [
         {
+            "label": "save all file",
+            "isBackground": false,  
+			"presentation": {
+				"reveal": "never"
+			},                    
+            "options": {
+                
+                "cwd": "workbench.action.files.saveAll"
+            }  ,
+            // "type": "shell",
+            // "key": "ctrl+h",            // binding of your choice
+            "command": "workbench.action.files.saveAll",         
+
+        },        
+        {   
             "type": "shell",
-            "label": "Build and run(g++-7)",
+            "label": "Build and run(g++-7)",            
             "command": "",
             "args": [
                 "cd",
@@ -29,7 +44,10 @@
                 "reveal": "never",
                 // "showReuseMessage": false,
                 "clear": true,
-              }
+            },
+            "dependsOn" : [
+                "save all file"
+            ]
         },
         {
             "label": "build + commit",
@@ -66,8 +84,11 @@
             "presentation": {
                 "focus": true,
                 "reveal": "never",
-            },          
-        },                 
+            },  
+            "dependsOn" : [
+                "save all file"
+            ]                    
+        },            
     ],
     "version": "2.0.0"
 }
