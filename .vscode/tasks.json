@@ -37,7 +37,7 @@
                 "$gcc"
             ],
             "presentation": {
-                "reveal": "never",
+                // "reveal": "never",
                 // "showReuseMessage": false,
                 "clear": true,
             },
