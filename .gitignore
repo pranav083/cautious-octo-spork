@@ -1,0 +1,9 @@
+# Compiled objects and binaries
+*.o
+*.obj
+*.out
+build/
+
+# Editor
+*.swp
+.DS_Store
